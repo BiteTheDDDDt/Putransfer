@@ -71,5 +71,59 @@ namespace Putransfer
         {
 
         }
+
+        private void ButtonBackTip_Popup(object sender, PopupEventArgs e)
+        {
+
+        }
+
+        private void ButtonBackTip_Popup_1(object sender, PopupEventArgs e)
+        {
+
+        }
+
+        private void toolStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void ButtonSwap_Click(object sender, EventArgs e)
+        {
+            string str = textBoxOld.Text;
+            textBoxOld.Text = textBoxNew.Text;
+            textBoxNew.Text = str;
+            TextChanged();
+        }
+
+        private void TextChanged()
+        {
+            TextStkNew.Push(textBoxNew.Text);
+            TextStkOld.Push(textBoxOld.Text);
+        }
+
+
+        private void ButtonBack_Click(object sender, EventArgs e)
+        {
+            if(TextStkNew.Count!=0)
+            {
+                TextStkNew.Pop();
+                TextStkOld.Pop();
+            }
+            if (TextStkNew.Count != 0)
+            {
+                textBoxNew.Text = (string)TextStkNew.Peek();
+                textBoxOld.Text = (string)TextStkOld.Peek();
+            }
+            else
+            {
+                textBoxNew.Text = "";
+                textBoxOld.Text = "";
+            }
+        }
+
+        private void label3_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

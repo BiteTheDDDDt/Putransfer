@@ -120,5 +120,8 @@
   <ItemGroup>
     <None Include="Resources\favicon.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RegistryEditor_5838_32x.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

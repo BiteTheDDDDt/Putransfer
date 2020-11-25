@@ -118,23 +118,26 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Open_6296" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Open_6296.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="NavigateBackwards_6270" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\NavigateBackwards_6270.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Putransfer" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Putransfer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="NavigateForward_6271" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NavigateForward_6271.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="FillTool_204" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\FillTool_204.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="NavigateBackwards_6270" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NavigateBackwards_6270.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RightArrowAsterisk_16x" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RightArrowAsterisk_16x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Putransfer1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Putransfer1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="GotoNextRow_289" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\GotoNextRow_289.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Putransfer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Putransfer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="favicon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\favicon.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="MovePrevious_7195" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MovePrevious_7195.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -142,16 +145,16 @@
   <data name="Putransfer.ico" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Putransfer.ico.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="RightArrowAsterisk_16x" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\RightArrowAsterisk_16x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="GotoNextRow_289" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GotoNextRow_289.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="LayerDiagramfile_layerdiagram_13450" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LayerDiagramfile_layerdiagram_13450.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="NavigateForward_6271" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\NavigateForward_6271.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Open_6296" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Open_6296.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="favicon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\favicon.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="RegistryEditor_5838_32x" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RegistryEditor_5838_32x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
