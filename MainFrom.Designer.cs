@@ -144,10 +144,9 @@ namespace Putransfer
             this.label3.ForeColor = System.Drawing.Color.Maroon;
             this.label3.Location = new System.Drawing.Point(160, 38);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(51, 18);
+            this.label3.Size = new System.Drawing.Size(41, 18);
             this.label3.TabIndex = 16;
-            this.label3.Text = "v0.11";
-            this.label3.Click += new System.EventHandler(this.label3_Click_1);
+            this.label3.Text = "v0.1";
             // 
             // pictureBox1
             // 
@@ -318,7 +317,8 @@ namespace Putransfer
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
-
+            TextStkOld = new Stack();
+            TextStkNew = new Stack();
         }
 
         #endregion

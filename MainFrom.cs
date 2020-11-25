@@ -89,10 +89,10 @@ namespace Putransfer
 
         private void ButtonSwap_Click(object sender, EventArgs e)
         {
+            TextChanged();
             string str = textBoxOld.Text;
             textBoxOld.Text = textBoxNew.Text;
             textBoxNew.Text = str;
-            TextChanged();
         }
 
         private void TextChanged()
@@ -104,26 +104,18 @@ namespace Putransfer
 
         private void ButtonBack_Click(object sender, EventArgs e)
         {
-            if(TextStkNew.Count!=0)
-            {
-                TextStkNew.Pop();
-                TextStkOld.Pop();
-            }
             if (TextStkNew.Count != 0)
             {
                 textBoxNew.Text = (string)TextStkNew.Peek();
                 textBoxOld.Text = (string)TextStkOld.Peek();
+                TextStkNew.Pop();
+                TextStkOld.Pop();
             }
             else
             {
                 textBoxNew.Text = "";
                 textBoxOld.Text = "";
             }
-        }
-
-        private void label3_Click_1(object sender, EventArgs e)
-        {
-
         }
     }
 }
