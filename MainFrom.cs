@@ -1,17 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Putransfer
 {
     public partial class MainFrom : Form
     {
+
         public MainFrom()
         {
             InitializeComponent();
@@ -37,22 +31,8 @@ namespace Putransfer
 
         }
 
-        private void trackBar1_Scroll(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
         {
 
         }
@@ -61,32 +41,6 @@ namespace Putransfer
         {
 
         }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ButtonBackTip_Popup(object sender, PopupEventArgs e)
-        {
-
-        }
-
-        private void ButtonBackTip_Popup_1(object sender, PopupEventArgs e)
-        {
-
-        }
-
-        private void toolStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        {
-
-        }
-
         private void ButtonSwap_Click(object sender, EventArgs e)
         {
             TextChanged();
@@ -94,8 +48,7 @@ namespace Putransfer
             textBoxOld.Text = textBoxNew.Text;
             textBoxNew.Text = str;
         }
-
-        private void TextChanged()
+        new private void TextChanged()
         {
             TextStkNew.Push(textBoxNew.Text);
             TextStkOld.Push(textBoxOld.Text);
@@ -116,6 +69,22 @@ namespace Putransfer
                 textBoxNew.Text = "";
                 textBoxOld.Text = "";
             }
+        }
+
+        private void trackBarOld_Scroll(object sender, EventArgs e)
+        {
+            this.labelOld.Text = Tonality.intDic[this.trackBarOld.Value];
+        }
+
+        private void trackBarNew_Scroll(object sender, EventArgs e)
+        {
+            this.labelNew.Text = Tonality.intDic[this.trackBarNew.Value];
+
+        }
+
+        private void labelOld_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

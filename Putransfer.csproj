@@ -54,6 +54,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tonality.cs" />
     <EmbeddedResource Include="MainFrom.resx">
       <DependentUpon>MainFrom.cs</DependentUpon>
     </EmbeddedResource>
@@ -122,6 +123,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\RegistryEditor_5838_32x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\%24this.Icon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+
 namespace Putransfer
 {
     partial class MainFrom
@@ -33,8 +34,8 @@ namespace Putransfer
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainFrom));
             this.textBoxNew = new System.Windows.Forms.TextBox();
             this.textBoxOld = new System.Windows.Forms.TextBox();
-            this.trackBar1 = new System.Windows.Forms.TrackBar();
-            this.trackBar2 = new System.Windows.Forms.TrackBar();
+            this.trackBarOld = new System.Windows.Forms.TrackBar();
+            this.trackBarNew = new System.Windows.Forms.TrackBar();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -58,8 +59,10 @@ namespace Putransfer
             this.ButtonRightRightTip = new System.Windows.Forms.ToolTip(this.components);
             this.trackBar1Tip = new System.Windows.Forms.ToolTip(this.components);
             this.trackBar2Tip = new System.Windows.Forms.ToolTip(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).BeginInit();
+            this.labelOld = new System.Windows.Forms.Label();
+            this.labelNew = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBarOld)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBarNew)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -82,26 +85,29 @@ namespace Putransfer
             this.textBoxOld.Size = new System.Drawing.Size(473, 710);
             this.textBoxOld.TabIndex = 1;
             // 
-            // trackBar1
+            // trackBarOld
             // 
-            this.trackBar1.Location = new System.Drawing.Point(532, 69);
-            this.trackBar1.Name = "trackBar1";
-            this.trackBar1.Orientation = System.Windows.Forms.Orientation.Vertical;
-            this.trackBar1.Size = new System.Drawing.Size(56, 172);
-            this.trackBar1.TabIndex = 0;
-            this.ButtonBackTip.SetToolTip(this.trackBar1, "原调");
-            this.trackBar1.Scroll += new System.EventHandler(this.trackBar1_Scroll);
+            this.trackBarOld.Location = new System.Drawing.Point(532, 69);
+            this.trackBarOld.Maximum = 11;
+            this.trackBarOld.Name = "trackBarOld";
+            this.trackBarOld.Orientation = System.Windows.Forms.Orientation.Vertical;
+            this.trackBarOld.Size = new System.Drawing.Size(56, 172);
+            this.trackBarOld.TabIndex = 0;
+            this.ButtonBackTip.SetToolTip(this.trackBarOld, "原调");
+            this.trackBarOld.Scroll += new System.EventHandler(this.trackBarOld_Scroll);
             // 
-            // trackBar2
+            // trackBarNew
             // 
-            this.trackBar2.Location = new System.Drawing.Point(695, 69);
-            this.trackBar2.Name = "trackBar2";
-            this.trackBar2.Orientation = System.Windows.Forms.Orientation.Vertical;
-            this.trackBar2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.trackBar2.Size = new System.Drawing.Size(56, 172);
-            this.trackBar2.TabIndex = 9;
-            this.trackBar2.TickStyle = System.Windows.Forms.TickStyle.TopLeft;
-            this.ButtonBackTip.SetToolTip(this.trackBar2, "变调");
+            this.trackBarNew.Location = new System.Drawing.Point(674, 69);
+            this.trackBarNew.Maximum = 11;
+            this.trackBarNew.Name = "trackBarNew";
+            this.trackBarNew.Orientation = System.Windows.Forms.Orientation.Vertical;
+            this.trackBarNew.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.trackBarNew.Size = new System.Drawing.Size(56, 172);
+            this.trackBarNew.TabIndex = 9;
+            this.trackBarNew.TickStyle = System.Windows.Forms.TickStyle.TopLeft;
+            this.ButtonBackTip.SetToolTip(this.trackBarNew, "变调");
+            this.trackBarNew.Scroll += new System.EventHandler(this.trackBarNew_Scroll);
             // 
             // label2
             // 
@@ -129,7 +135,7 @@ namespace Putransfer
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("黑体", 7.865546F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label1.Font = new System.Drawing.Font("黑体", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label1.ForeColor = System.Drawing.Color.Maroon;
             this.label1.Location = new System.Drawing.Point(10, 68);
             this.label1.Name = "label1";
@@ -144,9 +150,9 @@ namespace Putransfer
             this.label3.ForeColor = System.Drawing.Color.Maroon;
             this.label3.Location = new System.Drawing.Point(160, 38);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(41, 18);
+            this.label3.Size = new System.Drawing.Size(52, 18);
             this.label3.TabIndex = 16;
-            this.label3.Text = "v0.1";
+            this.label3.Text = "v0.12";
             // 
             // pictureBox1
             // 
@@ -288,15 +294,42 @@ namespace Putransfer
             // 
             this.trackBar2Tip.IsBalloon = true;
             // 
+            // labelOld
+            // 
+            this.labelOld.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.labelOld.AutoEllipsis = true;
+            this.labelOld.Font = new System.Drawing.Font("幼圆", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.labelOld.ForeColor = System.Drawing.Color.Firebrick;
+            this.labelOld.Location = new System.Drawing.Point(489, 28);
+            this.labelOld.Name = "labelOld";
+            this.labelOld.Size = new System.Drawing.Size(117, 38);
+            this.labelOld.TabIndex = 16;
+            this.labelOld.Text = "A";
+            this.labelOld.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelOld.Click += new System.EventHandler(this.labelOld_Click);
+            // 
+            // labelNew
+            // 
+            this.labelNew.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labelNew.Font = new System.Drawing.Font("幼圆", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.labelNew.ForeColor = System.Drawing.Color.Firebrick;
+            this.labelNew.Location = new System.Drawing.Point(638, 28);
+            this.labelNew.Name = "labelNew";
+            this.labelNew.Size = new System.Drawing.Size(117, 38);
+            this.labelNew.TabIndex = 17;
+            this.labelNew.Text = "A";
+            this.labelNew.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // MainFrom
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(1262, 734);
+            this.Controls.Add(this.labelOld);
+            this.Controls.Add(this.labelNew);
             this.Controls.Add(this.ButtonTrim);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.trackBar2);
-            this.Controls.Add(this.trackBar1);
+            this.Controls.Add(this.trackBarNew);
+            this.Controls.Add(this.trackBarOld);
             this.Controls.Add(this.ButtonBack);
             this.Controls.Add(this.ButtonSwap);
             this.Controls.Add(this.ButtonTransferLeft);
@@ -306,19 +339,20 @@ namespace Putransfer
             this.Controls.Add(this.ButtonTransfer);
             this.Controls.Add(this.textBoxOld);
             this.Controls.Add(this.textBoxNew);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "MainFrom";
             this.Text = "Putransfer";
             this.Load += new System.EventHandler(this.MainFrom_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBarOld)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBarNew)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
-            TextStkOld = new Stack();
-            TextStkNew = new Stack();
+
         }
 
         #endregion
@@ -333,8 +367,8 @@ namespace Putransfer
         private System.Windows.Forms.Button ButtonTransferLeft;
         private System.Windows.Forms.Button ButtonSwap;
         private System.Windows.Forms.Button ButtonBack;
-        private System.Windows.Forms.TrackBar trackBar1;
-        private System.Windows.Forms.TrackBar trackBar2;
+        private System.Windows.Forms.TrackBar trackBarOld;
+        private System.Windows.Forms.TrackBar trackBarNew;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
@@ -351,6 +385,8 @@ namespace Putransfer
         private System.Windows.Forms.ToolTip ButtonRightRightTip;
         private System.Windows.Forms.ToolTip trackBar1Tip;
         private System.Windows.Forms.ToolTip trackBar2Tip;
+        private System.Windows.Forms.Label labelOld;
+        private System.Windows.Forms.Label labelNew;
     }
 }
 
